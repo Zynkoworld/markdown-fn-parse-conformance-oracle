@@ -1,0 +1,8 @@
+{"input": "This will be a paragraph", "expect": "<p>This will be a paragraph</p>", "task": "markdown", "lang": "python"}
+{"input": "_This will be italic_", "expect": "<p><em>This will be italic</em></p>", "task": "markdown", "lang": "python"}
+{"input": "__This will be bold__", "expect": "<p><strong>This will be bold</strong></p>", "task": "markdown", "lang": "python"}
+{"input": "This will _be_ __mixed__", "expect": "<p>This will <em>be</em> <strong>mixed</strong></p>", "task": "markdown", "lang": "python"}
+{"input": "# This will be an h1", "expect": "<h1>This will be an h1</h1>", "task": "markdown", "lang": "python"}
+{"input": "## This will be an h2", "expect": "<h2>This will be an h2</h2>", "task": "markdown", "lang": "python"}
+{"input": "### This will be an h3", "expect": "<h3>This will be an h3</h3>", "task": "markdown", "lang": "python"}
+{"input": "#### This will be an h4", "expect": "<h4>This will be an h4</h4>", "task": "markdown", "lang": "python"}
