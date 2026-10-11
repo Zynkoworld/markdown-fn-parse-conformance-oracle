@@ -2,7 +2,7 @@
 """verify.py -- CI gate. Futtatja a referencia-implementaciot a kanonikus korpuszon, es exit 0 IFF
 minden eset egyezik ES a korpusz nem degeneralt (>=2 kulonbozo kimenet).
 
-A KIMENET FORMATUMA A PUBLISH-KAPU SZERZODESE (compute-oracle osztaly): utolso sor "ZOLD", es a
+A KIMENET FORMATUMA A PUBLISH-KAPU SZERZODESE (compute-oracle osztaly): utolso sor "GREEN", es a
 kimenetben nem szerepelhet a "mismatch"/"serult" szo -- ezert az elteres neve itt `disagree`.
 Szandekosan NEM irunk `recall`/`false_positives` szamot: azok OSZTALYOZASI metrikak, es egy
 konformancia-korpuszon (ahol nincs pozitiv/negativ osztaly) ERTELMETLENEK volnanak. A cimke nem
@@ -46,7 +46,7 @@ def main():
           % (oracle.TASK, len(probes), agree, disagree, lock[:16]))
     if disagree:
         return 1
-    print("ZOLD")
+    print("GREEN")
     return 0
 
 
